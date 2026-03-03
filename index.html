@@ -82,23 +82,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               الأفضل.
             </p>
             <div class="cta-group">
-              <a
-                class="btn primary"
-                href="tel:067477776"
-                data-i18n="hero.ctaCall"
-                data-gtm-event="call_click"
-                >اتصل بنا</a
-              >
-              
-              <a
-                class="btn secondary"
-                href="https://wa.me/971506486366"
-                target="_blank"
-                rel="noopener"
-                data-i18n="hero.ctaWhatsapp"
-                 data-gtm-event="whatsapp_click"
-                >تواصل عبر الواتساب</a
-              >
+           <a
+  class="btn primary"
+  href="tel:067477776"
+  data-i18n="hero.ctaCall"
+  onclick="gtag('event', 'call_click', { event_category: 'engagement', event_label: 'phone_button' });"
+>
+  اتصل بنا
+</a>
+<a
+  class="btn secondary"
+  href="https://wa.me/971506486366"
+  target="_blank"
+  rel="noopener"
+  data-i18n="hero.ctaWhatsapp"
+  onclick="gtag('event', 'whatsapp_click', { event_category: 'engagement', event_label: 'whatsapp_button' });"
+>
+  تواصل عبر الواتساب
+</a>
+
             </div>
           </div>
          
@@ -134,6 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 
